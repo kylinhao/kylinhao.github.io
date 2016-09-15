@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>kylinhao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Prepration1. 安装git, nodejs(自带npm)123456sudo apt-get install wget https://nodejs.org/dist/v4.5.0/node-v4.5.0.tar.gztar -zxvf node-v4.5.0.tar.gz./configure --prefix=/opt/makemake install
+2. root修改系统环境变量">
+<meta property="og:type" content="article">
+<meta property="og:title" content="kylinhao">
+<meta property="og:url" content="http://yoursite.com/2016/09/15/Hexo-Install/index.html">
+<meta property="og:site_name" content="kylinhao">
+<meta property="og:description" content="Prepration1. 安装git, nodejs(自带npm)123456sudo apt-get install wget https://nodejs.org/dist/v4.5.0/node-v4.5.0.tar.gztar -zxvf node-v4.5.0.tar.gz./configure --prefix=/opt/makemake install
+2. root修改系统环境变量">
+<meta property="og:updated_time" content="2016-09-14T14:28:33.128Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="kylinhao">
+<meta name="twitter:description" content="Prepration1. 安装git, nodejs(自带npm)123456sudo apt-get install wget https://nodejs.org/dist/v4.5.0/node-v4.5.0.tar.gztar -zxvf node-v4.5.0.tar.gz./configure --prefix=/opt/makemake install
+2. root修改系统环境变量">
+  
+    <link rel="alternative" href="/kylinhao.xml" title="kylinhao" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+</head>
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">kylinhao</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/kylinhao.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="yoursite.com">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="outer">
+      <section id="main"><article id="post-Hexo-Install" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/09/15/Hexo-Install/" class="article-date">
+  <time datetime="2016-09-15T02:47:49.316Z" itemprop="datePublished">2016-09-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Prepration"><a href="#Prepration" class="headerlink" title="Prepration"></a>Prepration</h3><h4 id="1-安装git-nodejs-自带npm"><a href="#1-安装git-nodejs-自带npm" class="headerlink" title="1. 安装git, nodejs(自带npm)"></a><span>1.</span> 安装git, nodejs(自带npm)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install </div><div class="line">wget https://nodejs.org/dist/v4.5.0/node-v4.5.0.tar.gz</div><div class="line">tar -zxvf node-v4.5.0.tar.gz</div><div class="line">./configure --prefix=/opt/</div><div class="line">make</div><div class="line">make install</div></pre></td></tr></table></figure>
+<h4 id="2-root修改系统环境变量（非必要）"><a href="#2-root修改系统环境变量（非必要）" class="headerlink" title="2. root修改系统环境变量（非必要）"></a><span>2.</span> root修改系统环境变量（非必要）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /etc/profile</div></pre></td></tr></table></figure>
+<p>在最后追加export PATH=/opt/node-v4.5.0/bin/:$PATH<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">source /etc/profile</div></pre></td></tr></table></figure></p>
+<h4 id="3-安装-hexo"><a href="#3-安装-hexo" class="headerlink" title="3. 安装 hexo"></a><span>3.</span> 安装 hexo</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo</div></pre></td></tr></table></figure>
+<h4 id="4-github新建blog"><a href="#4-github新建blog" class="headerlink" title="4. github新建blog"></a><span>4.</span> github新建blog</h4><ol>
+<li>以kylinhao.github.io命名，kylinhao为自己的用户名，选中Readme</li>
+<li>建议先使用ssh生成key</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C mail@mail.com</div></pre></td></tr></table></figure>
+<p>然后根据提示连续回车即可在~/.ssh目录下得到id_rsa和id_rsa.pub两个文件，id_rsa.pub文件里存放的就是我们要使用的key。<br>将id_rsa.pub中的key添加到账户中（网页对应的Settings下的SSH and GPG keys的New SSH key）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/username/kylinhao.github.io</div><div class="line">cd kylihao.github.io</div><div class="line">echo &quot;Hello World&quot; &gt; index.html</div><div class="line">git add --all</div><div class="line">git commit -m &quot;Initial commit&quot;</div><div class="line">git push -u origin master</div></pre></td></tr></table></figure></p>
+<h4 id="5-hexo-配置"><a href="#5-hexo-配置" class="headerlink" title="5. hexo 配置"></a><span>5.</span> hexo 配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo init</div><div class="line">vim _config.yml</div></pre></td></tr></table></figure>
+<p>最后的deploy修改成如下所示<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:kylinhao/kylinhao.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>save，然后执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p>然后<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo generate // hexo g </div><div class="line">hexo server   // hexo s</div><div class="line">hexo del</div></pre></td></tr></table></figure></p>
+<h4 id="5-hexo-新建文档"><a href="#5-hexo-新建文档" class="headerlink" title="5. hexo 新建文档"></a><span>5.</span> hexo 新建文档</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;mardown filename&quot; //没有后缀</div><div class="line">hexo clean //这一步没必要</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
+<h4 id="6-hexo-主题修改"><a href="#6-hexo-主题修改" class="headerlink" title="6. hexo 主题修改"></a><span>6.</span> hexo 主题修改</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd kylinhao.github.io/themes</div><div class="line">git clone https://github.com/xiangming/landscape-plus.git</div><div class="line">vim ../_config.yml</div></pre></td></tr></table></figure>
+<p>修改<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">theme: landscape-plus</div></pre></td></tr></table></figure></p>
+<p>到此，所有的步骤都完成了，如果发现显示不正确，可能是font或者是mathjax CDN不正确，记得加载成正确的HTTPS地址</p>
+<p>Now everything is ok， good luck!</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://yoursite.com/2016/09/15/Hexo-Install/" data-id="cit3qiay30001z5jxbgjbafhq" class="article-share-link" data-share="baidu" data-title="">Share</a>
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/09/15/At-Offer/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 kylinhao<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+  <!-- totop start -->
+<div id="totop">
+<a title="totop"><img src="/img/scrollup.png"/></a>
+</div>
+
+<!-- totop end -->
+
+
+<!-- 百度分享 start -->
+
+<div id="article-share-box" class="article-share-box">
+  <div id="bdshare" class="bdsharebuttonbox article-share-links">
+    <a class="article-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a class="article-share-weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a class="article-share-qq" data-cmd="sqq" title="分享到QQ"></a>
+    <a class="article-share-renren" data-cmd="renren" title="分享到人人网"></a>
+    <a class="article-share-more" data-cmd="more" title="更多"></a>
+  </div>
+</div>
+<script>
+  function SetShareData(cmd, config) {
+    if (shareDataTitle && shareDataUrl) {
+      config.bdText = shareDataTitle;
+      config.bdUrl = shareDataUrl;
+    }
+    return config;
+  }
+  window._bd_share_config={
+    "common":{onBeforeClick: SetShareData},
+    "share":{"bdCustomStyle":"/css/bdshare.css"}
+  };
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+<!-- 百度分享 end -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+<! -- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+                processEscapes: true
+                    
+}
+  
+        });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+                  
+}
+    
+        });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                            all[i].SourceElement().parentNode.className += ' has-jax';
+                                    
+            }
+                
+        });
+</script>
+
+
+
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<script src="/js/script.js"></script>
+
+</div>
+</body>
+</html>
